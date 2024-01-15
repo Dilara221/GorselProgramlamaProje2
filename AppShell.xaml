@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DilarOdev.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DilarOdev"
+    Shell.FlyoutBehavior="Flyout">
+
+
+        <ShellContent
+        Title="Giriş"
+            Icon="user.png"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+   Title="Güncel Kurlar"
+        Icon="dollar.png"
+   ContentTemplate="{DataTemplate local:guncelkurlar}"
+   Route="guncelkurlar" />
+
+
+
+    <ShellContent
+   Title="Hava Durumu"
+        Icon="hava.png"
+   ContentTemplate="{DataTemplate local:havadurumu}"
+   Route="havadurumu" />
+
+    <ShellContent
+   Title="Yapılacaklar"
+        Icon="checklist.png"
+   ContentTemplate="{DataTemplate local:Yapilacaklar}"
+   Route="Yapilacaklar" />
+    
+    <ShellContent
+   Title="Ayar Sayfası"
+        Icon="settings.png"
+   ContentTemplate="{DataTemplate local:ayarlar}"
+   Route="ayarlar" />
+
+    <ShellContent
+   Title="Hava Durumu2"
+        Icon="settings.png"
+   ContentTemplate="{DataTemplate local:havaDurumu2}"
+   Route="havaDururmu2" />
+
+
+
+</Shell>
